@@ -1,2 +1,2 @@
-paramount-house
+Paramount House
 ===============
