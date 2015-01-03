@@ -2,6 +2,8 @@ module.exports = function(grunt) {
 
     'use strict';
 
+    var COPYRIGHT = '/*\n Paramount House 2.0 Copyright (c) 2014.\n Diego Teliz - All Rights Reserved.\n Go to: https://github.com/diegoteliz/paramount-house for details.\n*/\n';
+
     // Project configuration
     grunt.initConfig({
 
@@ -18,6 +20,8 @@ module.exports = function(grunt) {
                     cssDir: 'css',
                     cacheDir: '.tmp/.sass-cache',
                     noLineComments: true,
+                    banner: COPYRIGHT,
+                    specify: 'sass/*.scss',
                     outputStyle: 'expanded'
                 }
             },
@@ -27,6 +31,8 @@ module.exports = function(grunt) {
                     cssDir: 'www/css',
                     cacheDir: '.tmp/.sass-cache',
                     noLineComments: true,
+                    banner: COPYRIGHT,
+                    specify: 'sass/*.scss',
                     outputStyle: 'compressed'
                 }
             }
