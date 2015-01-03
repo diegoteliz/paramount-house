@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/*
+
+Theme Name: Diego Téliz
+Author: Diego Téliz - contacto@diegoteliz.com
+Version: 1.0
+
+*/
+
+// Vendors
+@import 'compass';
+
+// Base
+@import 'base/_reset';
+@import 'base/_config';
+@import 'base/_iconfonts';
+@import 'base/_mixins';
+
+// Layout
+@import 'layout/_common';
+@import 'layout/_header';
+@import 'layout/_menu';
+
+// Modules
+@import 'modules/_preloader';
+@import 'modules/_options';
+@import 'modules/_search';
+
+// Pages
+@import 'pages/_home';

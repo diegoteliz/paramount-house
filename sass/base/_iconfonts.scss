@@ -1,0 +1,35 @@
+@font-face {
+    font-family: $icon-font;
+    src:url('/font/icomoon.eot?9y4l8n');
+    src:url('/font/icomoon.eot?#iefix9y4l8n') format('embedded-opentype'),
+        url('/font/icomoon.woff?9y4l8n') format('woff'),
+        url('/font/icomoon.ttf?9y4l8n') format('truetype'),
+        url('/font/icomoon.svg?9y4l8n#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    font: normal normal normal $base-font-size/1 $icon-font;
+    speak: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+    @extend .icon;
+    content: "\e600";
+}
+.icon-close:before {
+    @extend .icon;
+    content: "\e601";
+}
+.icon-checkbox-unchecked:before {
+    @extend .icon;
+    content: "\e602";
+}
+.icon-checkbox-checked:before {
+    @extend .icon;
+    content: "\e603";
+}

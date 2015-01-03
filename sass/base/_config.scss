@@ -1,0 +1,25 @@
+// Fonts
+$primary-font: 'Open Sans', serif;
+$icon-font: 'icomoon';
+$secondary-font: 'Roboto', sans-serif;
+$base-font-size: 16px;
+
+// Colors
+$font-primary-color: #DDD;
+$font-secondary-color: #888;
+$bg-primary-color: #222;
+$bg-secondary-color: #323232;
+
+// Transitions
+$primary-transition: all 0.3s ease;
+$secondary-transition: all 0.5s ease;
+$transition-fast: all 0.2s ease;
+$transition-slow: all 1s ease;
+
+// Responsive
+$phone: 512px;
+$tablet: 768px;
+$desktop-small: 1024px;
+$desktop-medium: 1280px;
+$desktop-large: 1536px;
+$desktop-xlarge: 1792px;

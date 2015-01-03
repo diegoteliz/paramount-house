@@ -1,0 +1,17 @@
+/* Header bar */
+#main-menu {
+    background: $bg-primary-color;
+    @include box-shadow(0 1px 6px 1px rgba(0,0,0,0.6));
+    height: 60px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+/* Logo */
+#logo {
+    margin: 10px 0 0 70px;
+    position: absolute;
+}
