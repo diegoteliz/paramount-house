@@ -1,0 +1,70 @@
+#movies-list {
+    font-size: 0;
+    letter-spacing: 0;
+    margin-top: 60px;
+    overflow: hidden;
+    word-spacing: 0;
+}
+.movie {
+    //display: inline-block;
+    //vertical-align: top;
+    border: 2px solid #000;
+    @include box-sizing(border-box);
+    cursor: pointer;
+    float: left;
+    overflow: hidden;
+    @include transition($primary-transition);
+    width: 12.5%;
+    @include breakpoint($desktop-xlarge) {
+        width: 14.2%;
+    }
+    @include breakpoint($desktop-large) {
+        width: 16.6%;
+    }
+    @include breakpoint($desktop-medium) {
+        width: 20%;
+    }
+    @include breakpoint($desktop-small) {
+        width: 25%;
+    }
+    @include breakpoint($tablet) {
+        width: 33.3%;
+    }
+    @include breakpoint($phone) {
+        width: 50%;
+    }
+}
+.movie img {
+    height: auto;
+    max-width: 100%;
+    @include transition($primary-transition);
+}
+.movie:hover img {
+    -o-transform: scale(1.2);
+    @include transform(scale(1.2));
+}
+.x2 {
+    width: 25%;
+    @include breakpoint($desktop-xlarge) {
+        width: 28.5%;
+    }
+    @include breakpoint($desktop-large) {
+        width: 33.6%;
+    }
+    @include breakpoint($desktop-medium) {
+        width: 40%;
+    }
+    @include breakpoint($desktop-small) {
+        width: 50%;
+    }
+    @include breakpoint($tablet) {
+        width: 66.6%;
+    }
+    @include breakpoint($phone) {
+        width: 100%;
+    }
+}
+.movie.x2 img {
+    /*border-top-width: 6px;*/
+    margin-top: -12px;
+}
