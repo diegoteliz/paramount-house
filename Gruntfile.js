@@ -159,7 +159,7 @@ module.exports = function(grunt) {
                 tasks: ['compass', 'csslint']
             },
             scripts: {
-                files: ['**/*.js'],
+                files: ['Gruntfile.js', 'js/main.js', 'js/app/**/*.js'],
                 tasks: ['jshint']
             },
             livereload: {
@@ -192,10 +192,10 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['dev']);
     grunt.registerTask('dev', [
         'compass:dev',
-        //'connect:dev',
+        'connect:dev',
         'jshint',
         'csslint:dev',
-        //'watch'
+        'watch'
     ]);
     grunt.registerTask('prod', [
         'clean',

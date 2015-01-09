@@ -313,10 +313,6 @@ p {
 }
 
 .movie {
-  border: 2px solid #000;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   cursor: pointer;
   float: left;
   overflow: hidden;
@@ -324,19 +320,24 @@ p {
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  width: 12.5%;
+  width: 14.2%;
 }
 @media only screen and (max-width: 1792px) {
-  .movie {
-    width: 14.2%;
-  }
-}
-@media only screen and (max-width: 1536px) {
   .movie {
     width: 16.6%;
   }
 }
+@media only screen and (max-width: 1536px) {
+  .movie {
+    width: 20%;
+  }
+}
 @media only screen and (max-width: 1280px) {
+  .movie {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
   .movie {
     width: 20%;
   }
@@ -375,16 +376,16 @@ p {
 }
 
 .x2 {
-  width: 25%;
+  width: 28.5%;
 }
 @media only screen and (max-width: 1792px) {
   .x2 {
-    width: 28.5%;
+    width: 33.6%;
   }
 }
 @media only screen and (max-width: 1536px) {
   .x2 {
-    width: 33.6%;
+    width: 40%;
   }
 }
 @media only screen and (max-width: 1280px) {
@@ -410,7 +411,6 @@ p {
 
 .movie.x2 img {
   /*border-top-width: 6px;*/
-  margin-top: -12px;
 }
 
 #preloader {
