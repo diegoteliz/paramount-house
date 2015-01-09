@@ -4,6 +4,8 @@ module.exports = function(grunt) {
 
     var COPYRIGHT = '/*\n Paramount House 2.0 Copyright (c) 2014.\n Diego Teliz - All Rights Reserved.\n Go to: https://github.com/diegoteliz/paramount-house for details.\n*/\n';
 
+    require('time-grunt')(grunt);
+
     // Project configuration
     grunt.initConfig({
 
