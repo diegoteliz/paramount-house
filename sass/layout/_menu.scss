@@ -1,7 +1,7 @@
 /* Menu button */
 #menu-btn {
-    display: block;
     border-right: 1px solid $bg-secondary-color;
+    display: none;
     height: 30px;
     @include opacity(1);
     padding: 15px 20px;
@@ -31,23 +31,29 @@
             width: 100%;
         }
     }
+    @include breakpoint($desktop-medium) {
+        display: block;
+    }
 }
 
 /* Menu items */
 #main-nav-wrapper {
     background-color: $bg-primary-color;
     height: 100%;
-    left: -255px;
+    left: 0;
     @include opacity(0.9);
     overflow-x: auto;
     position: fixed;
     @include transition($primary-transition);
     top: 0;
-    width: 255px;
+    width: 250px;
     z-index: 4;
     &.opened {
         left: 0;
         @include transition($primary-transition);
+    }
+    @include breakpoint($desktop-medium) {
+        left: -250px;
     }
 }
 

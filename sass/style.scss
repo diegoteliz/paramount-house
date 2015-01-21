@@ -7,12 +7,13 @@
 @import 'base/_reset';
 @import 'base/_config';
 @import 'base/_iconfonts';
-@import 'base/_mixins';
+@import 'base/_functions';
 
 // Layout
 @import 'layout/_common';
 @import 'layout/_header';
 @import 'layout/_menu';
+@import 'layout/_grid';
 
 // Modules
 @import 'modules/_preloader';
@@ -20,4 +21,4 @@
 @import 'modules/_search';
 
 // Pages
-@import 'pages/_home';
+//@import 'pages/_home';
