@@ -4,72 +4,6 @@
  Go to: https://github.com/diegoteliz/paramount-house for details.
 */
 
-/*
- Paramount House 2.0 Copyright (c) 2014.
- Diego Teliz - All Rights Reserved.
- Go to: https://github.com/diegoteliz/paramount-house for details.
-*/
-
-/*
- Paramount House 2.0 Copyright (c) 2014.
- Diego Teliz - All Rights Reserved.
- Go to: https://github.com/diegoteliz/paramount-house for details.
-*/
-
-/*
- Paramount House 2.0 Copyright (c) 2014.
- Diego Teliz - All Rights Reserved.
- Go to: https://github.com/diegoteliz/paramount-house for details.
-*/
-
-/*
- Paramount House 2.0 Copyright (c) 2014.
- Diego Teliz - All Rights Reserved.
- Go to: https://github.com/diegoteliz/paramount-house for details.
-*/
-
-/*
- Paramount House 2.0 Copyright (c) 2014.
- Diego Teliz - All Rights Reserved.
- Go to: https://github.com/diegoteliz/paramount-house for details.
-*/
-
-/*
- Paramount House 2.0 Copyright (c) 2014.
- Diego Teliz - All Rights Reserved.
- Go to: https://github.com/diegoteliz/paramount-house for details.
-*/
-
-/*
- Paramount House 2.0 Copyright (c) 2014.
- Diego Teliz - All Rights Reserved.
- Go to: https://github.com/diegoteliz/paramount-house for details.
-*/
-
-/*
- Paramount House 2.0 Copyright (c) 2014.
- Diego Teliz - All Rights Reserved.
- Go to: https://github.com/diegoteliz/paramount-house for details.
-*/
-
-/*
- Paramount House 2.0 Copyright (c) 2014.
- Diego Teliz - All Rights Reserved.
- Go to: https://github.com/diegoteliz/paramount-house for details.
-*/
-
-/*
- Paramount House 2.0 Copyright (c) 2014.
- Diego Teliz - All Rights Reserved.
- Go to: https://github.com/diegoteliz/paramount-house for details.
-*/
-
-/*
- Paramount House 2.0 Copyright (c) 2014.
- Diego Teliz - All Rights Reserved.
- Go to: https://github.com/diegoteliz/paramount-house for details.
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, figure, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -167,6 +101,52 @@ footer, header, hgroup, menu, nav, section {
   content: "\e603";
 }
 
+@-moz-keyframes appear {
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes appear {
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@-moz-keyframes moveUp {
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes moveUp {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes moveUp {
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 /* General tags */
 html {
   font-size: 16px;
@@ -375,18 +355,126 @@ p {
   letter-spacing: 0;
   margin-top: 60px;
   overflow: hidden;
+  padding: 2px;
   word-spacing: 0;
 }
 
 .movie {
+  -moz-animation: moveUp 0.4s ease 1s forwards;
+  -webkit-animation: moveUp 0.4s ease 1s forwards;
+  animation: moveUp 0.4s ease 1s forwards;
+  border: 2px solid #000;
+  box-sizing: border-box;
   cursor: pointer;
   float: left;
+  opacity: 0;
   overflow: hidden;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -o-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+  transform: translateY(100px);
   width: 14.2%;
+}
+.movie:nth-child(1) {
+  -moz-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.movie:nth-child(2) {
+  -moz-animation-delay: 0.05s;
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+}
+.movie:nth-child(3) {
+  -moz-animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.movie:nth-child(4) {
+  -moz-animation-delay: 0.15s;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+.movie:nth-child(5) {
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.movie:nth-child(6) {
+  -moz-animation-delay: 0.25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+.movie:nth-child(7) {
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.movie:nth-child(8) {
+  -moz-animation-delay: 0.35s;
+  -webkit-animation-delay: 0.35s;
+  animation-delay: 0.35s;
+}
+.movie:nth-child(9) {
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.movie:nth-child(10) {
+  -moz-animation-delay: 0.45s;
+  -webkit-animation-delay: 0.45s;
+  animation-delay: 0.45s;
+}
+.movie:nth-child(11) {
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.movie:nth-child(12) {
+  -moz-animation-delay: 0.55s;
+  -webkit-animation-delay: 0.55s;
+  animation-delay: 0.55s;
+}
+.movie:nth-child(13) {
+  -moz-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.movie:nth-child(14) {
+  -moz-animation-delay: 0.65s;
+  -webkit-animation-delay: 0.65s;
+  animation-delay: 0.65s;
+}
+.movie:nth-child(15) {
+  -moz-animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.movie:nth-child(16) {
+  -moz-animation-delay: 0.75s;
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+.movie:nth-child(17) {
+  -moz-animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+.movie:nth-child(18) {
+  -moz-animation-delay: 0.85s;
+  -webkit-animation-delay: 0.85s;
+  animation-delay: 0.85s;
+}
+.movie:nth-child(19) {
+  -moz-animation-delay: 0.9s;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+.movie:nth-child(20) {
+  -moz-animation-delay: 0.95s;
+  -webkit-animation-delay: 0.95s;
+  animation-delay: 0.95s;
 }
 @media only screen and (max-width: 1792px) {
   .movie {
@@ -394,16 +482,6 @@ p {
   }
 }
 @media only screen and (max-width: 1536px) {
-  .movie {
-    width: 20%;
-  }
-}
-@media only screen and (max-width: 1280px) {
-  .movie {
-    width: 25%;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
   .movie {
     width: 20%;
   }
@@ -423,7 +501,42 @@ p {
     width: 50%;
   }
 }
-
+.movie.x2 {
+  width: 28.4%;
+}
+@media only screen and (max-width: 1792px) {
+  .movie.x2 {
+    width: 33.2%;
+  }
+}
+@media only screen and (max-width: 1536px) {
+  .movie.x2 {
+    width: 39.9%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .movie.x2 {
+    width: 49.9%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .movie.x2 {
+    width: 66.5%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .movie.x2 {
+    width: 100%;
+  }
+}
+.movie.x2 img {
+  margin-top: -3px;
+}
+@media only screen and (max-width: 1536px) {
+  .movie.x2 img {
+    margin-top: -2px;
+  }
+}
 .movie img {
   height: auto;
   max-width: 100%;
@@ -432,51 +545,12 @@ p {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .movie:hover img {
   -o-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-}
-
-.x2 {
-  width: 28.5%;
-}
-@media only screen and (max-width: 1792px) {
-  .x2 {
-    width: 33.6%;
-  }
-}
-@media only screen and (max-width: 1536px) {
-  .x2 {
-    width: 40%;
-  }
-}
-@media only screen and (max-width: 1280px) {
-  .x2 {
-    width: 40%;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .x2 {
-    width: 50%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .x2 {
-    width: 66.6%;
-  }
-}
-@media only screen and (max-width: 512px) {
-  .x2 {
-    width: 100%;
-  }
-}
-
-.movie.x2 img {
-  /*border-top-width: 6px;*/
 }
 
 #preloader {

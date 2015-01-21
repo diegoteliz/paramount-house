@@ -9,6 +9,7 @@ define([
     var CoreView = Backbone.View.extend({
 
         el: 'body',
+        overlay: $('#overlay'),
 
         events: {
             'click #menu-btn': 'toggleMenu',
@@ -26,8 +27,8 @@ define([
             }
             $('#menu-btn').toggleClass('selected');
             $('#main-nav-wrapper').toggleClass('opened');
-            $('#overlay').toggleClass('visible dark');
-            $('#overlay').click(function() {
+            this.overlay.toggleClass('visible dark');
+            this.overlay.click(function() {
                 $('#menu-btn').trigger('click');
             });
         },
@@ -41,8 +42,8 @@ define([
             var $this = $(event.currentTarget);
             $this.toggleClass('selected');
             $('#options-wrapper').toggleClass('opened');
-            $('#overlay').toggleClass('visible');
-            $('#overlay').click(function() {
+            this.overlay.toggleClass('visible');
+            this.overlay.click(function() {
                 $('#options-btn').trigger('click');
             });
         },
@@ -56,18 +57,22 @@ define([
         showSearch: function() {
             $('#search-field, #search-close-btn').show();
             $('#search-field').focus();
+            this.overlay.addClass('visible dark');
+            this.overlay.click(function() {
+                $('#search-close-btn').trigger('click');
+            });
         },
 
         hideSearch: function(){
             $('#search-field, #search-close-btn').hide();
+            this.overlay.removeClass('visible dark');
         },
 
         keyDownHandler: function(event){
             switch (event.which) {
                 // Esc key
                 case 27:
-                    $('#overlay').trigger('click');
-                    this.hideSearch();
+                    this.overlay.trigger('click');
                     break;
             }
         }
